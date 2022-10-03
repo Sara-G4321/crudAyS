@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="javascript/clientes.js"></script>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <title>Clientes</title>
+  </head>
+
+  <body>
+    <div class="base" style="background-image: url(./img/baseVentas.jpg)"></div>
+    <br />
+    <h2 style="text-align: center"><b>Módulo clientes</b></h2>
+    <form
+      name="myform"
+      style="background-image: url(./img/fondoVentas.jpg); margin: 5px"
+    >
+      <div class="container">
+        <div class="formulario_ventas">
+          <div class="col-6 align-self-center">
+            <label for="id">Id:</label>
+            <input
+              class="form-control"
+              type="text"
+              id="id"
+              style="border: 1px solid #472eb9"
+            />
+          </div>
+
+          <div class="col-6 align-self-center">
+            <label for="nombre">Nombre:</label>
+            <input
+              class="form-control"
+              type="text"
+              id="nombre"
+              style="border: 1px solid #472eb9"
+            />
+          </div>
+
+          <div class="col-6 align-self-center">
+            <label for="apellido">Apellido:</label>
+            <input
+              class="form-control"
+              type="text"
+              id="apellido"
+              style="border: 1px solid #472eb9"
+            />
+          </div>
+
+          <div class="col-6 align-self-center">
+            <label for="direccion">Direccion:</label>
+            <input
+              class="form-control"
+              type="text"
+              id="direccion"
+              style="border: 1px solid #472eb9"
+            />
+          </div>
+
+          <div class="col-6 align-self-center">
+            <label for="email">Email:</label>
+            <input
+              class="form-control"
+              type="text"
+              id="email"
+              style="border: 1px solid #472eb9"
+            />
+          </div>
+
+          <div class="col-6 align-self-center">
+            <label for="ciudad">Ciudad:</label>
+            <input
+              class="form-control"
+              type="text"
+              id="ciudad"
+              style="border: 1px solid #472eb9"
+            />
+          </div>
+
+          <br />
+          <div class="align-self-center">
+            <button type="button" class="botones" onclick="crearCliente()">
+              Crear
+            </button>
+            <button type="button" class="botones" onclick="eliminar()">
+              Eliminar
+            </button>
+            <button type="button" class="botones" onclick="editar()">
+              Editar
+            </button>
+            <button type="button" class="botones" onclick="listarCliente()">
+              Listar
+            </button>
+            <button type="button" class="botones" onclick="mostrarId()">
+              Mostrar
+            </button>
+            <button type="button" class="botones" onclick="limpiar()">
+              Limpiar
+            </button>
+
+            <a
+              href="index.html"
+              type="button"
+              class="botones"
+              style="color: black"
+              >Inicio</a
+            >
+            <br /><br />
+          </div>
+        </div>
+      </div>
+    </form>
+    <div style="margin: 20px">
+      <table
+        id="cuerpotabla"
+        class="table table-hover"
+        style="border: 1px solid #3684f0"
+      >
+        <thead style="background-color: #80b0fa">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">NOMBRE</th>
+            <th scope="col">APELLIDO</th>
+            <th scope="col">DIRECCION</th>
+            <th scope="col">EMAIL</th>
+            <th scope="col">CIUDAD</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
